@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/": ["./src/"],
+      "@commands/": ["./src/commands/"],
+      "@events/": ["./src/events/"],
+      "@services/": ["./src/services/"],
+      "@models/": ["./src/models/"],
+      "@utils/": ["./src/utils/"],
+      "@config/": ["./src/config/"],
+      "@routes/": ["./src/routes/"],
+      "@middleware/": ["./src/middleware/"],
+      "@prisma/": ["./src/prisma/"]
+    },
+    "types": [
+      "node",
+      "jest",
+      "next"
+    ],
+    "lib": [
+      "esnext",
+      "dom"
+    ]
+  },
+  "include": [
+    "src//.ts",
+    "src//.tsx",
+    "next.config.js",
+    "pages//.ts",
+    "pages//.tsx",
+    "components//.ts",
+    "components//.tsx",
+    "public//.ts",
+    "public//.tsx",
+    "types//.ts",
+    "types//.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "dist"
+  ]
+}
